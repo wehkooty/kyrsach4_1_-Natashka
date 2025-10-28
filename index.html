@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Распределенные Клубы (Frontend)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="#/" class="brand">🏛️ Клубы</a>
+        <a href="#/clubs" class="link authed">Клубы</a>
+        <a href="#/statistics" class="link admin-only">Статистика</a>
+        <a href="#/admin" class="link admin-only">Админ</a>
+      </div>
+      <div class="nav-right">
+        <span id="navUser" class="muted"></span>
+        <a href="#/login" class="link guest-only">Войти</a>
+        <a href="#/register" class="link guest-only">Регистрация</a>
+        <button id="logoutBtn" class="btn authed" style="display:none">Выйти</button>
+        <button id="themeToggle" class="theme-toggle" title="Toggle theme">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </nav>
+
+    <main id="app" class="container"></main>
+
+    <div id="toastContainer" class="toast-container"></div>
+
+    <footer class="footer">Демо-версия фронтенда. Данные сохраняются в localStorage.</footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
